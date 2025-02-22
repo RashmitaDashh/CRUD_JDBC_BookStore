@@ -47,7 +47,7 @@
 						method="post" style="display: inline;">
 						<input type="hidden" name="action" value="delete"> <input
 							type="hidden" name="id" value="<%=book.getId()%>">
-						<button type="submit">Delete</button>
+						<button type="submit" onclick="return confirm('Are you sure you want to delete this book?')">Delete</button>
 					</form>
 				</td>
 			</tr>
